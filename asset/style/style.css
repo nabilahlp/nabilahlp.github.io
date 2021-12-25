@@ -1,0 +1,197 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@&display=swap'); */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif !important;   
+}
+
+body {
+    position: relative;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.profile {
+    transform: translatey(0px);
+	animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/* Navbar */
+.navbar{
+    font-size: 20px;
+}
+
+.nav-link {
+    margin-right: 40px;
+}
+
+.nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #284B63;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 2px;
+    margin-bottom: -4px;  
+    
+}
+
+.active{
+    border-bottom: 2px solid #284B63;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 2px;
+    margin-bottom: 4px; 
+    margin-right: 50px;
+    font-weight: bolder;
+}
+
+/* Content */
+.greeting {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.span-greeting {
+    font-size: 50px;
+    font-weight: bold;
+    color: #284B63;
+}
+
+.span-emoji {
+    font-weight: normal;
+}
+
+.biotext {
+    font-size: 30px;
+    margin-top: 45px;
+    line-height: 53px;
+}
+
+#skill,
+#projects {
+    background-color: #284B63;
+    color: #fff;
+}
+
+.educard {
+    margin-top: 50px;
+    border: 2px solid #BFC6CB;
+    border-radius: 20px;
+    width: 80%;
+    padding: 54px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 900;
+    color: #284B63;
+}
+
+.subtitle {
+    font-size: 27px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.text {
+    font-size: 25px;
+    color: #333333;
+}
+
+.card-img-top {
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+  }
+
+.middle-text {
+    background-color: #284B63;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 8px;
+  }
+
+.card:hover .card-img-top {
+    opacity: 0.4;
+}
+
+.card:hover .middle {
+    opacity: 1;
+}
+
+footer {
+    padding-top: 25px;
+    text-align: center;
+    top: 0;
+}
+
+.text-footer {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.body-footer {
+    font-size: 25px;
+    color: #fff;
+}
+
+.contact-footer {
+    background-color: #284B63;
+    font-size: 25px;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+#about-me {
+    padding-top: 150px;
+}
+
+#skill {
+    padding-top: 150px;
+}
+
+#education {
+    padding-top: 100px;
+}
+
+#projects {
+    padding-top: 150px;
+}
